@@ -2,5 +2,29 @@
 
 @import "bootstrap";
 
-.side { padding: 4ex; text-align: center; }
+.side { padding: 2ex; text-align: center; }
+.col { padding: 10px; }
+.restart-button {float: right; margin-left:auto;}
+
 h1 { text-align: center; }
+h2#point { margin-right: 50px; }
+
+.card-open {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.card-closed {
+    color: white;
+    background: black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.card-open:hover, .card-closed:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+
+.container {
+    padding: 80px 10px;
+}
