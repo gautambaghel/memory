@@ -93,7 +93,7 @@ class Demo extends React.Component {
   toggle(recievedTile) {
     
     let xs = _.map(this.state.tiles, (tile) => {
-      if (tile.status == 1 && tile.letter == recievedTile.letter) {
+      if (tile.status == 1 && tile.letter == recievedTile.letter && tile != recievedTile) {
         this.addToSeen(tile.letter, true);
         _.extend(recievedTile, {status: 2});
         return  _.extend(tile, {status: 2});
